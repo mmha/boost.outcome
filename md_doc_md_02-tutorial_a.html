@@ -409,7 +409,10 @@ Sea of noexcept, islands of exception throw</h3>
 <h3><a class="anchor" id="bad_expected_access"></a>
 Expected's bad_expected_access&lt;E&gt;</h3>
 <p>The proposed Expected implementation defines this exception type to represent when you try to use an <code>expected&lt;T, E&gt;</code> in a way not compatible with its current state:</p>
-<div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keyword">class </span>bad_expected_access : <span class="keyword">public</span> std::logic_error</div>
+<div class="fragment"><div class="line"><span class="comment">// Used to let you catch all throws of bad_expected_access&lt;...&gt;</span></div>
+<div class="line"><span class="keyword">class </span>bad_expected_access_base : <span class="keyword">public</span> std::logic_error { ... };</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keyword">class </span>bad_expected_access : <span class="keyword">public</span> bad_expected_access_base</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">  <span class="keyword">using</span> error_type = E;</div>
@@ -424,7 +427,7 @@ Expected's bad_expected_access&lt;E&gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="comment">// This is implemented by Outcome to handle valueless due to exception as we currently</span></div>
 <div class="line"><span class="comment">// do not implement the strong never empty guarantees of Expected</span></div>
-<div class="line">template &lt;&gt; class bad_expected_access&lt;<span class="keywordtype">void</span>&gt; : public std::logic_error</div>
+<div class="line">template &lt;&gt; class bad_expected_access&lt;<span class="keywordtype">void</span>&gt; : public bad_expected_access_base</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">  <span class="keyword">using</span> error_type = void;</div>
@@ -443,7 +446,7 @@ Expected's bad_expected_access&lt;E&gt;</h3>
 <div class="line">  <span class="comment">// expected throws a bad_expected_access&lt;E&gt; with the current value of the E</span></div>
 <div class="line">  std::cerr &lt;&lt; <span class="stringliteral">&quot;Expected throws bad_expected_access with error &quot;</span> &lt;&lt; e.error() &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The standards proposal for Expected implements the <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0110r0.html">P0110R0</a> technique for making <code>std::variant&lt;...&gt;</code> never have the potential for a valueless state. Outcome's Expected implementation does not currently implement this technique due to its significant implementation complexity, but may do so in the future. Until then, if a valueless due to exception state ever appears, we throw a <code>bad_expected_access&lt;void&gt;</code> exception when you try to access an Expected which is valueless as an <code>expected&lt;T, E = void&gt;</code> is not a possible Expected configuration.</p>
+</div><!-- fragment --><p>The standards proposal for Expected implements the <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0110r0.html">P0110R0</a> technique for making <code>std::variant&lt;...&gt;</code> never have the potential for a valueless state. Outcome's Expected implementation does not currently implement this technique due to its significant implementation complexity, but may do so in the future. Until then, if a valueless due to exception state ever appears, we throw a <code>bad_expected_access&lt;void&gt;</code> exception when you try to access an Expected which is valueless, as an <code>expected&lt;T, E = void&gt;</code> is not a possible Expected configuration due to requiring E to be constructible.</p>
 <h3><a class="anchor" id="expected_observers"></a>
 Expected's observers</h3>
 <p>Generally speaking you will not want Expected to throw <code>bad_expected_access&lt;E&gt;</code> as a try-catch cycle is a lot less efficient than simply asking an <code>expected&lt;T, E&gt;</code> instance what state it has before accessing it. Expected has the following highly unsurprising observers with standard STL semantics and meaning matching those in <code>std::optional&lt;T&gt;</code> and <code>std::variant&lt;...&gt;</code>:</p>
