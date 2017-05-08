@@ -5,6 +5,7 @@ var searchData=
   ['in_5fplace',['in_place',['../namespaceboost_1_1outcome_1_1v1__xxx.html#a7f234da4e4c071a869b928d313bc5674',1,'boost::outcome::v1_xxx']]],
   ['in_5fplace_5ft',['in_place_t',['../structboost_1_1outcome_1_1v1__xxx_1_1in__place__t.html',1,'boost::outcome::v1_xxx']]],
   ['indeterminate',['indeterminate',['../group__tribool.html#gad3553144909f3e68a8da20f14e54cf21',1,'boost_lite::_xxx::tribool::indeterminate(tribool a) noexcept'],['../group__tribool.html#gga0d09bb88a1a4488567526cc3cadc0a8ba44560d82707cce3b8111a770924cf0e2',1,'boost_lite::_xxx::tribool::indeterminate()']]],
+  ['installing_2c_20building_20and_20testing_20outcome',['Installing, building and testing Outcome',['../introduction.html',1,'']]],
   ['is_5fcomparable',['is_comparable',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a6769b63365fbe576ef6523c5cdf36dd0',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5fconstructible',['is_constructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a76263c865d70f2783cc64c528af2e98b',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5fcopy_5fconstructible',['is_copy_constructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a6d53145bb8ea17b8a3f782b2f49b68bf',1,'boost::outcome::v1_xxx::basic_monad']]],
@@ -20,6 +21,5 @@ var searchData=
   ['is_5fnothrow_5fmove_5fassignable',['is_nothrow_move_assignable',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a7d6c3c6d03883ac95bc0160752f43095',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5fnothrow_5fmove_5fconstructible',['is_nothrow_move_constructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a1e3c7c16642a47ec1efe83c99cace63c',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5fready',['is_ready',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a5ff2295edbbeec04c0b5421050f81621',1,'boost::outcome::v1_xxx::basic_monad']]],
-  ['is_5ftrivially_5fdestructible',['is_trivially_destructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#ab6016982a331c03cd0e98c7097197109',1,'boost::outcome::v1_xxx::basic_monad']]],
-  ['installing_2c_20building_20and_20testing_20outcome',['Installing, building and testing Outcome',['../md_doc_md_01-installation.html',1,'']]]
+  ['is_5ftrivially_5fdestructible',['is_trivially_destructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#ab6016982a331c03cd0e98c7097197109',1,'boost::outcome::v1_xxx::basic_monad']]]
 ];
