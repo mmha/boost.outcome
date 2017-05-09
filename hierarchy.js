@@ -32,7 +32,6 @@ var hierarchy =
     ] ],
     [ "boost::outcome::v1_xxx::empty_t", "structboost_1_1outcome_1_1v1__xxx_1_1empty__t.html", null ],
     [ "boost::outcome::v1_xxx::basic_monad< implementation_policy >::empty_type", "structboost_1_1outcome_1_1v1__xxx_1_1basic__monad_1_1empty__type.html", null ],
-    [ "boost::outcome::v1_xxx::enable_single_byte_value_storage< _value_type >", "structboost_1_1outcome_1_1v1__xxx_1_1enable__single__byte__value__storage.html", null ],
     [ "std::error_code", null, [
       [ "boost::outcome::v1_xxx::error_code_extended", "classboost_1_1outcome_1_1v1__xxx_1_1error__code__extended.html", null ]
     ] ],
@@ -51,7 +50,6 @@ var hierarchy =
     [ "boost::outcome::v1_xxx::in_place_t", "structboost_1_1outcome_1_1v1__xxx_1_1in__place__t.html", null ],
     [ "std::is_error_code_enum< boost::outcome::v1_xxx::monad_errc >", "structstd_1_1is__error__code__enum_3_01boost_1_1outcome_1_1v1__xxx_1_1monad__errc_01_4.html", null ],
     [ "std::is_error_condition_enum< boost::outcome::v1_xxx::monad_errc >", "structstd_1_1is__error__condition__enum_3_01boost_1_1outcome_1_1v1__xxx_1_1monad__errc_01_4.html", null ],
-    [ "boost::outcome::v1_xxx::is_monad< M >", "structboost_1_1outcome_1_1v1__xxx_1_1is__monad.html", null ],
     [ "boost::outcome::v1_xxx::policy::monad_policy< R >", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy.html", null ],
     [ "boost::outcome::v1_xxx::policy::monad_policy_base< monad_storage, value_type, error_type, exception_type >", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html", null ],
     [ "boost::outcome::v1_xxx::policy::option_policy< R >", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1option__policy.html", null ],

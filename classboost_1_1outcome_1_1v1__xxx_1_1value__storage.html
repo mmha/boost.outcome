@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('classboost_1_1outcome_1_1v1__xxx_1_1va
 </div><!--header-->
 <div class="contents">
 
-<p>A fixed lightweight variant store for monad.This fixed variant list of empty, a type <code>value_type</code>, a lightweight <code>error_type</code> or a heavier <code>exception_type</code> typically has a space cost of <code>max(24, sizeof(R)+8)</code>. If however you specialise <code>enable_single_byte_value_storage&lt;T&gt;</code> with <code>true_type</code>, and both <code>error_type</code> and <code>exception_type</code> are disabled (void), a special single byte storage implementation is enabled. Both <code>bool</code> and <code>void</code> are already specialised.  
+<p>A fixed lightweight variant store for monad.This fixed variant list of empty, a type <code>value_type</code>, a lightweight <code>error_type</code> or a heavier <code>exception_type</code> typically has a space cost of <code>max(24, sizeof(R)+8)</code>. If however you specialise <code>enable_single_byte_value_storage&lt;T&gt;</code> with <code>true</code>, and both <code>error_type</code> and <code>exception_type</code> are disabled (void), a special single byte storage implementation is enabled. Both <code>bool</code> and <code>void</code> are already specialised.  
  <a href="classboost_1_1outcome_1_1v1__xxx_1_1value__storage.html#details">More...</a></p>
 
 <p><code>#include &quot;outcome.hpp&quot;</code></p>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classboost_1_1outcome_1_1v1__xxx_1_1va
 class boost::outcome::v1_xxx::value_storage&lt; _value_type, _error_type, _exception_type &gt;</h3>
 
 <p>A fixed lightweight variant store for monad.</p>
-<p>This fixed variant list of empty, a type <code>value_type</code>, a lightweight <code>error_type</code> or a heavier <code>exception_type</code> typically has a space cost of <code>max(24, sizeof(R)+8)</code>. If however you specialise <code>enable_single_byte_value_storage&lt;T&gt;</code> with <code>true_type</code>, and both <code>error_type</code> and <code>exception_type</code> are disabled (void), a special single byte storage implementation is enabled. Both <code>bool</code> and <code>void</code> are already specialised. </p>
+<p>This fixed variant list of empty, a type <code>value_type</code>, a lightweight <code>error_type</code> or a heavier <code>exception_type</code> typically has a space cost of <code>max(24, sizeof(R)+8)</code>. If however you specialise <code>enable_single_byte_value_storage&lt;T&gt;</code> with <code>true</code>, and both <code>error_type</code> and <code>exception_type</code> are disabled (void), a special single byte storage implementation is enabled. Both <code>bool</code> and <code>void</code> are already specialised. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">_value_type</td><td>The value type to use </td></tr>

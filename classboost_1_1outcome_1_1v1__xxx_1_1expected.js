@@ -44,6 +44,7 @@ var classboost_1_1outcome_1_1v1__xxx_1_1expected =
     [ "get_or", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a43d065fdfe9655c15660df6b3363b659", null ],
     [ "get_or", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a233ea683899c958f61acaf05fa10ac6f", null ],
     [ "get_or", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a3bf8beaed15f67e34a8fc763f8c4316b", null ],
+    [ "get_unexpected", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a02c910ae5336fec9dfb2e382a04ef7bc", null ],
     [ "has_error", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#aa2aca0f96409e1f7403d75d863732afc", null ],
     [ "has_exception", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a60e1870612af23da5cc1dcbad6310023", null ],
     [ "has_value", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a28a9e6d1cdfd40bfc9956a0f2362e860", null ],

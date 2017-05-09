@@ -6,6 +6,7 @@ var structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base =
     [ "get", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#a101f5a25c5942dc516be7638021aea10", null ],
     [ "get", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#aff6c07fdf054ed619de8ebcd8b41b022", null ],
     [ "get_error", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#a0324ba528e1a86eb6881afe97fd7f9ea", null ],
+    [ "get_unexpected", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#a02c910ae5336fec9dfb2e382a04ef7bc", null ],
     [ "operator*", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#afbd4a8763d061a160fd3167da0cf5244", null ],
     [ "operator*", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#ac8cc572dd7e4ea89990c34c2ce09c4de", null ],
     [ "operator*", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html#aed879fcba3556c5b274f0039e35cfc7e", null ],

@@ -45,6 +45,7 @@ var group__expected =
       [ "get_or", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a43d065fdfe9655c15660df6b3363b659", null ],
       [ "get_or", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a233ea683899c958f61acaf05fa10ac6f", null ],
       [ "get_or", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a3bf8beaed15f67e34a8fc763f8c4316b", null ],
+      [ "get_unexpected", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a02c910ae5336fec9dfb2e382a04ef7bc", null ],
       [ "has_error", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#aa2aca0f96409e1f7403d75d863732afc", null ],
       [ "has_exception", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a60e1870612af23da5cc1dcbad6310023", null ],
       [ "has_value", "classboost_1_1outcome_1_1v1__xxx_1_1expected.html#a28a9e6d1cdfd40bfc9956a0f2362e860", null ],
@@ -94,7 +95,7 @@ var group__expected =
     [ "make_expected", "group__expected.html#ga29da713c36094f47421c40844fbc577e", null ],
     [ "make_expected_from_error", "group__expected.html#ga726f6c276fd09c5036f20811239b0c8e", null ],
     [ "make_expected_from_error", "group__expected.html#gafb8fef1c192879efd3d8baa9e1d5fb29", null ],
-    [ "make_expected_from_error", "group__expected.html#ga2b20ead4762b8cc52a81dbcde62e4b4f", null ],
+    [ "make_expected_from_error", "group__expected.html#ga5e60da00a281806ce4b265738e39501c", null ],
     [ "make_unexpected", "group__expected.html#ga65f63cc3d21288cf48f31096b10c2b0b", null ],
     [ "make_unexpected", "group__expected.html#gabd55e36a8c81909ef08420b0f59c2d7c", null ],
     [ "unexpect", "group__expected.html#ga71d06dbe1034b67b00f3f69839c548ae", null ]

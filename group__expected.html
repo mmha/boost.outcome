@@ -150,11 +150,11 @@ template&lt;class T , class E &gt; </td></tr>
 <tr class="memitem:gafb8fef1c192879efd3d8baa9e1d5fb29"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classboost_1_1outcome_1_1v1__xxx_1_1expected.html">expected</a>&lt; T, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expected.html#gafb8fef1c192879efd3d8baa9e1d5fb29">boost::outcome::v1_xxx::make_expected_from_error</a> (const E &amp;v)</td></tr>
 <tr class="memdesc:gafb8fef1c192879efd3d8baa9e1d5fb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an errored expected from the type passed. <br /></td></tr>
 <tr class="separator:gafb8fef1c192879efd3d8baa9e1d5fb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b20ead4762b8cc52a81dbcde62e4b4f"><td class="memTemplParams" colspan="2"><a id="ga2b20ead4762b8cc52a81dbcde62e4b4f"></a>
-template&lt;class T , class E , class U &gt; </td></tr>
-<tr class="memitem:ga2b20ead4762b8cc52a81dbcde62e4b4f"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classboost_1_1outcome_1_1v1__xxx_1_1expected.html">expected</a>&lt; T, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expected.html#ga2b20ead4762b8cc52a81dbcde62e4b4f">boost::outcome::v1_xxx::make_expected_from_error</a> (U &amp;&amp;v)</td></tr>
-<tr class="memdesc:ga2b20ead4762b8cc52a81dbcde62e4b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an errored expected from the type passed. <br /></td></tr>
-<tr class="separator:ga2b20ead4762b8cc52a81dbcde62e4b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e60da00a281806ce4b265738e39501c"><td class="memTemplParams" colspan="2"><a id="ga5e60da00a281806ce4b265738e39501c"></a>
+template&lt;class T , class E , class U , typename  = typename std::enable_if&lt;!std::is_same&lt;E, U&gt;::value &amp;&amp; std::is_constructible&lt;E, U&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:ga5e60da00a281806ce4b265738e39501c"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classboost_1_1outcome_1_1v1__xxx_1_1expected.html">expected</a>&lt; T, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expected.html#ga5e60da00a281806ce4b265738e39501c">boost::outcome::v1_xxx::make_expected_from_error</a> (U &amp;&amp;v)</td></tr>
+<tr class="memdesc:ga5e60da00a281806ce4b265738e39501c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an errored expected from the type passed. <br /></td></tr>
+<tr class="separator:ga5e60da00a281806ce4b265738e39501c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61c46f3be4c8e19586871d20f37b5f10"><td class="memTemplParams" colspan="2"><a id="ga61c46f3be4c8e19586871d20f37b5f10"></a>
 template&lt;class T , class E &gt; </td></tr>
 <tr class="memitem:ga61c46f3be4c8e19586871d20f37b5f10"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classboost_1_1outcome_1_1v1__xxx_1_1expected.html">expected</a>&lt; void, E &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__expected.html#ga61c46f3be4c8e19586871d20f37b5f10">boost::outcome::v1_xxx::as_void</a> (const <a class="el" href="classboost_1_1outcome_1_1v1__xxx_1_1expected.html">expected</a>&lt; T, E &gt; &amp;v)</td></tr>
@@ -169,18 +169,8 @@ constexpr <a class="el" href="group__expected.html#ga43a5a0da82bcdf70d885e62ca9d
 <tr class="separator:ga71d06dbe1034b67b00f3f69839c548ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>For your convenience, Outcome implements the LEWG Expected proposal as per <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0323r1.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0323r1.pdf</a>. To our knowledge, this implementation is very close to the proposal with these exceptions:</p><ul>
-<li>P0323R1 doesn't yet specify what will be done if you try accessing an expected which is valueless due to exception. We throw a <code>bad_expected_access&lt;void&gt;</code> in this situation as that seemed sensible. If the LEWG proposal decides on something different, this implementation will change to track the LEWG proposal.</li>
-<li><code>unexpected_type&lt;E&gt;</code> is implemented as an <code>expected&lt;void, E&gt;</code> and it lets the basic_monad machinery do the implicit conversion to some <code>expected&lt;T, E&gt;</code>.</li>
-<li>Types <code>T</code> and <code>E</code> cannot be constructible into one another. This is a fundamental design choice in basic_monad to significantly reduce compile times so it won't be fixed.</li>
-<li><code>expected&lt;T, E&gt;</code> defaults E to <code>std::error_code</code>. If you don't like this, predefine the <code>BOOST_OUTCOME_EXPECTED_DEFAULT_ERROR_TYPE</code> macro.</li>
-<li>Our Expected always defines the default, copy and move constructors even if the the type configured is not capable of it. That means <code>std::is_copy_constructible</code> etc returns true when they should return false. The reason why is again to significantly improve compile times by hugely reducing the number of templates which need to be instantiated during routine basic_monad usage, and again this won't be fixed. Instead use the static constexpr bools at:<ul>
-<li><code>expected&lt;T, E&gt;is_default_constructible</code></li>
-<li><code>expected&lt;T, E&gt;is_copy_constructible</code></li>
-<li><code>expected&lt;T, E&gt;is_move_constructible</code> Depending on what any Boost peer review thinks, we may inject correct answers for the type traits for basic_monad into namespace std. </li>
-</ul>
-</li>
-</ul>
+<p>For your convenience, Outcome implements the LEWG Expected proposal as per <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0323r1.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0323r1.pdf</a>.</p>
+<p>See <a href="https://ned14.github.io/boost.outcome/md_doc_md_08-expectedsynopsis.html">https://ned14.github.io/boost.outcome/md_doc_md_08-expectedsynopsis.html</a> for detail. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

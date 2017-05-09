@@ -12,7 +12,6 @@ var searchData=
   ['is_5fdefault_5fconstructible',['is_default_constructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a4eb1a02af737f7072080f4682b788413',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5ferror_5fcode_5fenum_3c_20boost_3a_3aoutcome_3a_3av1_5fxxx_3a_3amonad_5ferrc_20_3e',['is_error_code_enum&lt; boost::outcome::v1_xxx::monad_errc &gt;',['../structstd_1_1is__error__code__enum_3_01boost_1_1outcome_1_1v1__xxx_1_1monad__errc_01_4.html',1,'std']]],
   ['is_5ferror_5fcondition_5fenum_3c_20boost_3a_3aoutcome_3a_3av1_5fxxx_3a_3amonad_5ferrc_20_3e',['is_error_condition_enum&lt; boost::outcome::v1_xxx::monad_errc &gt;',['../structstd_1_1is__error__condition__enum_3_01boost_1_1outcome_1_1v1__xxx_1_1monad__errc_01_4.html',1,'std']]],
-  ['is_5fmonad',['is_monad',['../structboost_1_1outcome_1_1v1__xxx_1_1is__monad.html',1,'boost::outcome::v1_xxx']]],
   ['is_5fmove_5fconstructible',['is_move_constructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a52504874b9b5cc1f0888f9983af373ef',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5fnothrow_5fcopy_5fassignable',['is_nothrow_copy_assignable',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#a20ac8ebdbb2ff2ce57d9527b4917194e',1,'boost::outcome::v1_xxx::basic_monad']]],
   ['is_5fnothrow_5fcopy_5fconstructible',['is_nothrow_copy_constructible',['../classboost_1_1outcome_1_1v1__xxx_1_1basic__monad.html#ab766f97321f577abff1283a778decdb5',1,'boost::outcome::v1_xxx::basic_monad']]],
