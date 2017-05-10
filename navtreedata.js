@@ -81,7 +81,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classboost_1_1outcome_1_1v1__xxx_1_1outcome.html#a3cb4201b875f7736743a00ae29b97637",
+"classboost_1_1outcome_1_1v1__xxx_1_1outcome.html#a3bf8beaed15f67e34a8fc763f8c4316b",
 "namespaceboost.html"
 ];
 

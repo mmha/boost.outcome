@@ -46,7 +46,7 @@ var hierarchy =
     ] ],
     [ "boost::outcome::v1_xxx::exception_t", "structboost_1_1outcome_1_1v1__xxx_1_1exception__t.html", null ],
     [ "boost::outcome::v1_xxx::policy::expected_policy< R, EC >", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy.html", null ],
-    [ "boost::outcome::v1_xxx::policy::expected_policy_base< monad_storage, value_type, error_type, exception_type >", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html", null ],
+    [ "boost::outcome::v1_xxx::policy::expected_policy_base< monad_storage, value_type, error_type >", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1expected__policy__base.html", null ],
     [ "boost::outcome::v1_xxx::in_place_t", "structboost_1_1outcome_1_1v1__xxx_1_1in__place__t.html", null ],
     [ "std::is_error_code_enum< boost::outcome::v1_xxx::monad_errc >", "structstd_1_1is__error__code__enum_3_01boost_1_1outcome_1_1v1__xxx_1_1monad__errc_01_4.html", null ],
     [ "std::is_error_condition_enum< boost::outcome::v1_xxx::monad_errc >", "structstd_1_1is__error__condition__enum_3_01boost_1_1outcome_1_1v1__xxx_1_1monad__errc_01_4.html", null ],

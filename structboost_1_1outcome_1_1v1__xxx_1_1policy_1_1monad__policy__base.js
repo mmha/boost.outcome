@@ -1,13 +1,17 @@
 var structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base =
 [
     [ "error", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a6d5a06127d3ab8aa317635cfef1ada6a", null ],
+    [ "error_or", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#ab8f70b9773e06e3f22d264aaf3a54150", null ],
     [ "exception", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a27d53d5aef1929924067e9afc1e55b9a", null ],
+    [ "exception_or", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a83aaaf238b85deea8c8eab4e972057b8", null ],
     [ "get", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#ae9b0265ee854f707c3cffcf81c2964bc", null ],
     [ "get", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#ae9a39ce20d808839c90219d635dd8160", null ],
     [ "get", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a0e4e2089b97b9fd999a48d0eae04b694", null ],
     [ "get", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#adf35128d27dc1d49bd314d9b53eaa276", null ],
     [ "get_error", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a53bcc738e586fc6c4f5edd45736d0d95", null ],
+    [ "get_error_or", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#afdaec21282c589ee8a54b8095efc1400", null ],
     [ "get_exception", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a6c2b61df29eac62baee0103001f4ba1d", null ],
+    [ "get_exception_or", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a2648e89f6ce475870705e6a34d83b19f", null ],
     [ "operator*", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a591803c16dccce2c1b9b73676535f19f", null ],
     [ "operator*", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a9b10ee8e2d7512aa6512c205bf85a20d", null ],
     [ "operator*", "structboost_1_1outcome_1_1v1__xxx_1_1policy_1_1monad__policy__base.html#a150155c0122daebc48bf2e9a4f6ba6dc", null ],
