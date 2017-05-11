@@ -113,6 +113,16 @@ $(document).ready(function(){initNavTree('md_doc_md_02-tutorial_a.html','');});
 <p> 
 <center><iframe width="853" height="480" src="https://www.youtube.com/embed/XVofgKH-uu4?rel=0" frameborder="0" allowfullscreen></iframe></center>
 </p>
+<p>ACCU talk errata:</p><ul>
+<li>17:50 I state that back converting an error condition to an error code with <code>std::make_error_code()</code> will generate a system-specific code matching that condition in <code>std::system_category()</code>. In fact it generates the matching POSIX error code in <code>std::generic_category()</code> on all platforms anyone seems to be aware of, so one cannot actually fully undo a conversion from a system error code into a portable error condition and back into a system error code again.</li>
+<li>26:40 Same erratum as for 17:50</li>
+<li>36:45 As is pretty clear in everything I say from now on, I was not aware at that time that Anthony's <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0110r0.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0110r0.html</a> proposal for eliminating the valueless by exception state in <code>std::variant&lt;...&gt;</code> was actively being considered for a future C++ standard (Anthony was in the audience at the back). The LEWG Expected makes use of P0110R0 to also eliminate any possibility of a valueless state, so an <code>expected&lt;T, E&gt;</code> can never be valueless. My apologies for being so wrong in everything I say on this topic in the talk.</li>
+<li>42:05 Accessing <code>.error()</code> when the Expected is valued DOES NOT throw an exception. It is as if <code>reinterpret_cast&lt;error_type&gt;</code>, exactly the same as <code>std::optional&lt;T&gt;</code>. Sorry.</li>
+<li>48:11 The code example should be using <code>DBL_EPSILON</code> not <code>FLT_EPSILON</code>. The Outcome documentation repeating the same mistake has been fixed.</li>
+<li>1:06:08 I say the range of overhead is one or two CPU cycles when the graph clearly shows about 12 CPU cycles. I meant one or two CPU cycles overhead difference <em>per frame</em> not overall, and yes that is strictly speaking possibly a 10% overhead over C integer return codes for some of the compiler and flags settings. In any real world code base however, one or two CPU cycles extra overhead per stack frame is not significant to the code executed in that stack frame.</li>
+<li>1:22:25 I say the words Visual Studio 2015 when I meant Visual Studio 2017, and that Update 1 to VS2017 should let me remove the MSVC-specific workarounds in Outcome.</li>
+<li>1:22:50 Same erratum as for 36:45.</li>
+</ul>
 <hr/>
 <p><br />
 </p>
